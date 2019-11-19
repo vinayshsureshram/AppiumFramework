@@ -5,6 +5,8 @@ public class SampleTest {
 		// TODO Auto-generated method stub
 
 		System.out.println("This is a sample test");
+		
+		System.out.prinltn("This is another sample test");
 	}
 
 }
