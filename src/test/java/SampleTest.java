@@ -6,7 +6,7 @@ public class SampleTest {
 
 		System.out.println("This is a sample test");
 		
-		System.out.prinltn("This is another sample test");
+		System.out.println("This is another sample test");
 	}
 
 }
