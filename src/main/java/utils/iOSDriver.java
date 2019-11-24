@@ -21,7 +21,7 @@ public class iOSDriver implements IMobileDriver{
 		DesiredCapabilities d = new DesiredCapabilities();
 		d.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11 Pro Max");
 		d.setCapability(MobileCapabilityType.PLATFORM_NAME,"IOS");
-		d.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.2");
+		d.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.2.2");
 		d.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		d.setCapability(MobileCapabilityType.APP, "/Users/vinaysh/Library/Developer/Xcode/DerivedData/UICatalog-gemkvmlugfsgigelltcqulnopmpm/Build/Products/Debug-iphonesimulator/UICatalog.app");
 		
