@@ -7,7 +7,6 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSBy;
-import utils.iOSDriver;
 
 public class HomePage extends BasePage {
 	
@@ -17,34 +16,26 @@ public class HomePage extends BasePage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@iOSBy(xpath="//XCUIElementTypeStaticText[@name=\"Alert Views\"]")
-	private WebElement ActionSheets;
+/*	private static HomePage instance;
+	
+	public static HomePage getPageInstance()
+	{
+		
+		if(instance == null) {
+			instance = new HomePage();
+		}
 
-	@iOSBy(xpath="//*[@value='Text Entry']")
-	private WebElement TextEntry;
-
-	@iOSBy(className="XCUIElementTypeTextField")
-	private WebElement TextField;
-
-
-public WebElement getAlertViews()
-{
-	System.out.println("Getting the Alerts Views link");
-	return ActionSheets;
-}
-
-public WebElement getTextEntry()
-{
-	System.out.println("Getting Text Entry");
-	return TextEntry;
-}
-
-public WebElement getTextField()
-{
-	System.out.println("Getting Text Field");
-	return TextField;
-}
-
+		return instance;
+	}*/
+	
+	@iOSBy(xpath="//XCUIElementTypeStaticText[@name=\"Action Sheets\"]")
+	private WebElement ActionsSheetButton;
+	
+	public WebElement getActionsSheetButton()
+	{
+		return ActionsSheetButton;
+	}
+	
 }
 
 
